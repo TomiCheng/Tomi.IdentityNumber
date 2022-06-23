@@ -35,5 +35,15 @@ namespace Tomi.IdentityNumber.Test
                 Assert.True(instance.Verify(id), id);
             }
         }
+        [Fact]
+        public void Test4()
+        {
+            var instance = new TaiwanVagabondNumber();
+            for (int i = 0; i < 100000; i++)
+            {
+                var id = instance.Generate();
+                Assert.True(instance.Verify(id), id);
+            }
+        }
     }
 }

@@ -13,7 +13,7 @@ namespace Tomi.IdentityNumber
 
         private static readonly int[] weights = new int[] { 1, 9, 8, 7, 6, 5, 4, 3, 2, 1, 1 };
 
-        private static readonly string pattern = "^[A-Z]{1}[1289A-D]{1}[0-9]{7}";
+        public static readonly string pattern = "^[A-Z]{1}[1289A-DXY]{1}[0-9]{7}";
 
         public static char CalculateCheckSum(string identityNumber)
         {
